@@ -196,5 +196,16 @@ def simulate_tram(starting_time, ending_time, tramways):
     create_stations(timetable)
 
 
+description_times = Label(window, text="Tram descriptions")
+description_times.place(x=1700, y=450)
+
+tram_descriptions = []
+
+for counter_tram, tram in enumerate(trams):
+    tram_descriptions.append(Label(
+        window, text=f"{counter_tram}", background=f"{tram_colors[counter_tram]}", foreground="white", font=30))
+    tram_descriptions[counter_tram].place(x=1750, y=500+(counter_tram*30))
+
+
 if __name__ == "__main__":
     window.mainloop()

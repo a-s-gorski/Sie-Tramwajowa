@@ -66,6 +66,11 @@ class Tram:
         return None
 
     def show_timedelta(self, departure_number, time):
+        """
+        returns how much the tram has moved
+        if it has moved at all
+        otherwise it returns none
+        """
         starting_location = self.show_location(departure_number, time)
         ending_location = self.show_location(departure_number, time+1)
         # the tram is moving if locations on two separate occcasions are diffrent

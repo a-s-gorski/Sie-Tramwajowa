@@ -4,7 +4,9 @@ from table_locations_source import table_locations
 
 '''
 The purpose of Tramwaje.py
-
+is to create a class, which can simulate movement,
+shows locations of an instance of a tram inside a line
+and holds all records of a line - both stations and departures
 
 '''
 
